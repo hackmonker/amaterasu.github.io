@@ -1,7 +1,7 @@
 name: Update Modules
 
 on:
-  repository_dispatch:
+  workflow_dispatch:
     types: update
 
 jobs:
