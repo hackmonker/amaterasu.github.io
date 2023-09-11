@@ -32,6 +32,7 @@ jobs:
           rm ./*.zip
           cp repo/zips/repository.amaterasuwizard/*.zip .
       - name: Commit packages
+        if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git add .
           git commit -m ":package::bookmark: - Update ${{github.event.client_payload.module}} to ${{github.event.client_payload.tag}}"
