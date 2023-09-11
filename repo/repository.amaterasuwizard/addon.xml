@@ -12,7 +12,7 @@
         <description>The official home of [COLOR gold][B]Loki[/B][/COLOR]Wizard.</description>
         <platform>all</platform>
         <assets>
-            <icon>icon.png</icon>
+            <icon>loki.jpg</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
