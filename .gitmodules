@@ -1,4 +1,4 @@
 [submodule "repo/plugin.program.amaterasu"]
 	path = repo/plugin.program.amaterasu
-	url = https://github.com/hackmonker/plugin.program.loki
+	url = https://github.com/hackmonker/plugin.program.amaterasu
 	branch = master
