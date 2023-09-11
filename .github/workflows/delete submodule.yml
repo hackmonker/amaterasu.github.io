@@ -26,6 +26,8 @@ jobs:
           git rm repo/plugin.program.amaterasu
       - name: Commit packages
         run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "noreply@github.com"
           git add .
           git commit -m ":package::bookmark: - Update ${{github.event.client_payload.module}} to ${{github.event.client_payload.tag}}"
           git push
