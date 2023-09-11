@@ -28,7 +28,9 @@ jobs:
       - name: Repo Generator
         run: python ./_repo_generator.py
       - name: Copy new repository zip
-        run: cp repo/zips/repository.amaterasuwizard/*.zip .
+        run: |
+          rm ./*.zip
+          cp repo/zips/repository.amaterasuwizard/*.zip .
       - name: Commit packages
         run: |
           git add .
