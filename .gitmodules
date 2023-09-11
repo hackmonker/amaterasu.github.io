@@ -1,0 +1,3 @@
+[submodule "repo/plugin.program.loki"]
+	path = repo/plugin.program.loki
+	url = https://github.com/hackmonker/plugin.program.loki
