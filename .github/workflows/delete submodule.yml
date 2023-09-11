@@ -24,7 +24,6 @@ jobs:
         run: |
           git submodule deinit repo/plugin.program.amaterasu
           git rm repo/plugin.program.amaterasu
-          rm -rf .git/modules/plugin.program.amaterasu
       - name: Commit packages
         run: |
           git add .
