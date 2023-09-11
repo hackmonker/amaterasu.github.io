@@ -29,7 +29,6 @@ jobs:
         run: python ./_repo_generator.py
       - name: Copy new repository zip
         run: |
-          rm ./*.zip
           cp repo/zips/repository.amaterasuwizard/*.zip .
       - name: Commit packages
         if: steps.verify_diff.outputs.changed == 'true'
