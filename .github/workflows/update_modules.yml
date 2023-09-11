@@ -1,8 +1,6 @@
 name: Update Modules
 
-on:
-  workflow_dispatch:
-    types: update
+on: workflow_dispatch
 
 jobs:
   update:
