@@ -29,7 +29,7 @@ jobs:
         run: python ./_repo_generator.py
       - name: Copy new repository zip
         run: |
-          cp repo/zips/repository.amaterasuwizard/*.zip .
+          cp repo/zips/repository.lokiwizard/*.zip .
       - name: Commit packages
         run: |
           git add .
