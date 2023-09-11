@@ -20,6 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Update pip
         run: python -m pip install --upgrade pip
+      - name: create Submodules        
+        run: git submodule add -b master https://github.com/hackmonker/plugin.program.amaterasu repo/plugin.program.amaterasu
       - name: Update Submodules
         run: |
           git submodule update --init --recursive --checkout --remote -f
