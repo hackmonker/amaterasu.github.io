@@ -26,8 +26,7 @@ jobs:
       #     git rm repo/plugin.program.amaterasu
       - name: Create new submodule
         run: |
-          git submodule add https://github.com/hackmonker/plugin.program.loki repo/plugin.program.loki
-          git rm repo/plugin.program.amaterasu      
+          git submodule add https://github.com/hackmonker/plugin.program.loki repo/plugin.program.loki    
       - name: Commit packages
         run: |
           git config --global user.name "GitHub Action"
